@@ -368,11 +368,11 @@ class DisplayWidget(QWidget):
         self.set_orient1()
 
         self.view.set_triedron()
+        self.create_qwmarkers()
 
         w, h = oldview.size()
-        # oldview.destroy()
-
-        self.create_qwmarkers()
+        
+        oldscene.destroy()
 
         # Tricks for preredraw view buffer
         self.view.set_virtual_window(w, h)
