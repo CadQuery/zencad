@@ -1,5 +1,15 @@
 import math
 
+try:
+	import PyQt5
+except:
+	print("Please, install PyQt5")
+	print("")
+	print("pip3 install pyqt5")
+	print("or")
+	print("apt install python3-pyqt5")
+	exit(0)
+
 import pyservoce
 from pyservoce import unify
 from pyservoce import point3, vector3

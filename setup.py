@@ -42,7 +42,7 @@ setup(
         "numpy",
         "pillow",
         "inotify",
-        "PyQt5",
+#        "PyQt5",
         #"zencad-cli",
     ],
     entry_points={"console_scripts": ["zencad=zencad.__main__:main"]},
